@@ -1,0 +1,79 @@
+Final html<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>404 — Refusal</title>
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #f2f2f2;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 520px;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 7rem;
+  margin: 0 0 2rem 0;
+  letter-spacing: 0.05em;
+}
+
+p {
+  margin: 1rem 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.85;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.last {
+  margin-top: 2.5rem;
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0.03em;
+  opacity: 0;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  transition: opacity 0.4s ease;
+}
+</style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>404</h1>
+
+    <p>This page does not exist.</p>
+
+    <p>
+      Creative capital is not extractable.<br>
+      The work is offline. Ownership intact.
+    </p>
+
+    <p class="last">Value moves through relation, not reach.</p>
+  </div>
+
+<script>
+  const delay = 300 + Math.random() * 400;
+  setTimeout(() => {
+    document.querySelector('.last').style.opacity = 0.45;
+  }, delay + 300);
+</script>
+</body>
+</html>
